@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script:regular);
+.wrapper{
+      overflow: hidden;
+      min-height: 100%;
+      position: relative;
+   }
+   body{
+      font-family: "Kaushan Script";
+      font-size: 30px;
+      color: white;
+   }
+   .header {
+      position: relative;
+      background-color: black;
+      padding-bottom: 20px;
+      z-index: 4;
+   }
+   .header__container {
+      width: 1230px;
+      margin: 0 auto;
+      background: url(../img/Wild_Hunt-The_Witcher.jpg) 0 0/cover no-repeat;
+      box-shadow: 0px 5px 10px rgb(181, 12, 15);
+      height: 670px;
+      animation: pulse 2s ease infinite alternate-reverse;
+   }
+   @keyframes pulse{
+      0%{
+         box-shadow: 0px 5px 10px 0px rgb(181, 12, 15);
+      }
+      100%{
+         box-shadow: 0px 5px 10px 20px rgb(181, 12, 15);
+      }
+   }
+   .header__block{
+      padding:15px;
+      position: relative;
+      text-align: center;
+      background-color: rgb(49, 10, 11);
+      border-radius: 0px 0px 192px 192px / 25px 25px 141px 141px;
+      z-index: 6;
+   }
+   
+   .header__block li{
+      position: relative;
+      display: inline-block;
+      color: #4e636c;
+      }
+   .header__block li:not(:last-child){
+      margin-right: 15px;
+   }
+   .header__logo{
+      position: relative;
+      max-width: 1230px;
+      z-index: 4;
+   }
+   .header__amulet{
+      background: url(../img/Real-Witcher-Medal.png) 0 -5px/300px 320px no-repeat;
+      position: absolute;
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      z-index: 5;
+      animation: angle 7s cubic-bezier(0.26, 0.26, 0.7, 0.68) infinite alternate-reverse;
+      transform-origin: top center;
+
+   }
+   @keyframes angle {
+      0%{
+         transform: rotate(15deg);
+      }
+      25%{
+         transform: rotate(7.5deg);
+      }
+      50%{
+         transform: rotate(0deg);
+      }
+      75%{
+         transform: rotate(-7.5deg);
+      }
+      100%{
+         transform: rotate(-15deg);
+      }
+   }
+   .page {
+      position: relative;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background: url('../img/another-rough-old-and-worn-parchment-paper.jpg') 0 0/ 100% 100% no-repeat local;
+      overflow: hidden;
+      padding: 20px;
+   }
+   .page__container {
+      position: relative;
+      z-index: 2;
+      max-width: 1230px;
+      margin: 0 auto;
+   }
+   .page__block{
+      position: relative;
+      z-index: 3;
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 20px;
+      color:#eaeaea;
+   }
+   .page__part-of-map img{
+      position: relative;
+      display: inline-block;
+      width: 100%;
+   }
+   .page__dragon {
+      position: absolute;
+      top: 660px;
+      left: 790px;
+      animation: path 15s ease infinite forwards;
+      z-index: 8;
+   }
+@keyframes path {
+   0%{
+      top: 660px;
+      left: 790px;
+   }
+   25%{
+      left: 321px;
+   }
+   50%{
+      top: 566px;
+      left: 257px;
+   }
+   75%{
+      top: 427px;
+   }
+   100%{
+      top: 660px;
+      left: 790px;
+   }
+}
+.page__gerald{
+   position: absolute;
+   top: 490px;
+   left: 500px;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s ease 0s;
+}
+.page__gerald img{
+   width: 120px;
+   z-index: 7;
+}
+.page__part-of-map:hover~.page__gerald, .page__gerald:hover{
+   visibility: visible;
+   opacity: 1;
+}
+.page__gerald:hover{
+   scale: 1.1;
+}
+.page__vesemir{
+   position: absolute;
+   top: 120px;
+   left: 1030px;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s ease 0s;
+   z-index: 7;
+}
+.page__vesemir img{
+   width: 70px;
+   z-index: 7;
+}
+.page__part-of-map:hover~.page__vesemir, .page__vesemir:hover{
+   visibility: visible;
+   opacity: 1;
+}
+.page__vesemir:hover{
+   scale: 1.1;
+}
+.page__yennefer{
+   position: absolute;
+   top: 600px;
+   left: 1100px;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s ease 0s;
+   z-index: 7;
+}
+.page__yennefer img{
+   width: 70px;
+   z-index: 7;
+}
+.page__part-of-map:hover~.page__yennefer, .page__yennefer:hover{
+   visibility: visible;
+   opacity: 1;
+}
+.page__yennefer:hover{
+   scale: 1.1;
+}
+.page__ciri{
+   position: absolute;
+   top: 570px;
+   left: 250px;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s ease 0s;
+   z-index: 7;
+}
+.page__ciri img{
+   width: 70px;
+   z-index: 7;
+}
+.page__part-of-map:hover~.page__ciri, .page__ciri:hover{
+   visibility: visible;
+   opacity: 1;
+}
+.page__ciri:hover{
+   scale: 1.1;
+}
+.page__ciri img{
+   width: 120px;
+   z-index: 7;
+}
+.page__character{
+   background-color: black;
+   overflow: hidden;
+}
+.character {
+   position: relative;
+   top: 0;
+}
+.character__title {
+   padding-top: 15px;
+   text-align: center;
+   font-size: 60px;
+   margin-bottom: 10px;
+}
+.character__gerald{
+   position: relative;
+   top: 0;
+}
+.character__gerald p{
+   position: absolute;
+   top: 40px;
+   left: 20px;
+   width: 50%;
+   font-size: 25px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0s;
+}
+.character__gerald img{
+   position: relative;
+   top: 0;
+   left: 600px;
+   width: 50%;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0s;
+}
+.character:hover .character__gerald p, .character:hover .character__gerald img{
+   opacity: 1;
+   visibility: visible;
+}
+.character__yennefer{
+   position: relative;
+   top: 0;
+}
+.character__yennefer p{
+   position: absolute;
+   top: 40px;
+   left: 580px;
+   width: 50%;
+   font-size: 25px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0.3s;
+}
+.character__yennefer img{
+   position: relative;
+   top: 0;
+   width: 50%;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0.3s;
+}
+.character:hover .character__yennefer p, .character:hover .character__yennefer img{
+   opacity: 1;
+   visibility: visible;
+}
+.character__ciri{
+   position: relative;
+   top: 0;
+}
+.character__ciri p{
+   position: absolute;
+   top: 40px;
+   left: 20px;
+   width: 50%;
+   font-size: 25px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0.6s;
+}
+.character__ciri img{
+   position: relative;
+   top: 0;
+   left: 600px;
+   width: 50%;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0.6s;
+}
+.character:hover .character__ciri p, .character:hover .character__ciri img{
+   opacity: 1;
+   visibility: visible;
+}
+.character__vesemir{
+   position: relative;
+   top: 0;
+}
+.character__vesemir p{
+   position: absolute;
+   top: 40px;
+   left: 580px;
+   width: 50%;
+   font-size: 25px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0.9s;
+}
+.character__vesemir img{
+   position: relative;
+   top: 0;
+   width: 50%;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0.9s;
+}
+.character:hover .character__vesemir p, .character:hover .character__vesemir img{
+   opacity: 1;
+   visibility: visible;
+}
+span{
+   color: #4e636c;
+   font-size: 30px;
+   text-shadow: 3px 3px 5px #b50c0f;
+   text-decoration: underline;
+}
+.footer{
+   background-color: black;
+   position: relative;
+}
