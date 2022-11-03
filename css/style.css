@@ -153,7 +153,7 @@
    opacity: 1;
 }
 .page__gerald:hover{
-   scale: 1.1;
+   transform:scale(1.1);
 }
 .page__vesemir{
    position: absolute;
@@ -173,7 +173,7 @@
    opacity: 1;
 }
 .page__vesemir:hover{
-   scale: 1.1;
+   transform:scale(1.1);
 }
 .page__yennefer{
    position: absolute;
@@ -193,7 +193,7 @@
    opacity: 1;
 }
 .page__yennefer:hover{
-   scale: 1.1;
+   transform:scale(1.1);
 }
 .page__ciri{
    position: absolute;
@@ -213,7 +213,7 @@
    opacity: 1;
 }
 .page__ciri:hover{
-   scale: 1.1;
+   transform:scale(1.1);
 }
 .page__ciri img{
    width: 120px;
